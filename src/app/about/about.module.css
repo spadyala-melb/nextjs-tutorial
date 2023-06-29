@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.topContainer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  filter: grayScale(100%);
+}
+
+.topContainerText {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: teal;
+  padding: 10px;
+}
+
+.topContainerText h3,
+.topContainerText p {
+  padding: 2px;
+}
+
+.bottomContainer {
+  display: flex;
+  gap: 50px;
+  line-height: 1.3;
+  color: gray;
+}
+
+.bottomContainer h3 {
+  padding-bottom: 20px;
+}
+
+.bottomContainer p {
+  font-size: 0.95rem;
+}
+.bottomContainer ul {
+  list-style-type: "-";
+  padding-left: 25px;
+}
+
+.bottomContainer li {
+  padding: 20px;
+}

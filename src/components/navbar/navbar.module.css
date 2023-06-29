@@ -1,0 +1,20 @@
+.container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: teal;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 600;
+  color: teal;
+}

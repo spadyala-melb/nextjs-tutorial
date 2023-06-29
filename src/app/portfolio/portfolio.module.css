@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.title {
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+
+.galleryContainer {
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.galleryItem {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  cursor: pointer;
+  border: 5px solid rgb(212, 211, 211);
+  border-radius: 5px;
+}
+
+.image {
+  object-fit: cover;
+  filter: grayScale(50%);
+  position: relative;
+}
+
+.imgText {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
