@@ -3,8 +3,10 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import { Suspense } from "react";
+import { ThemeContextProvider } from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
+// Configure in the above line for any google fonts etc
 
 export const metadata = {
   title: "Create Next App",
@@ -12,14 +14,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // const mode = "dark";
+
   return (
+    // <html lang="en" className={mode === "dark" ? "dark" : "light"}>
     <html lang="en">
       <body className={inter.className}>
-        <div className="container">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <ThemeContextProvider>
+          <div className="container">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </ThemeContextProvider>
       </body>
     </html>
   );

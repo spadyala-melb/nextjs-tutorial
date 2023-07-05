@@ -11,7 +11,6 @@ const Category = ({ params }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.importTitle}>Our Works</div>
       <div className={styles.title}>{id}</div>
       <div className={styles.categoriesList}>
         {data?.map((item) => (

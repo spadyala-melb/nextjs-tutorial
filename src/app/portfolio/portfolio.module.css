@@ -4,18 +4,21 @@
   color: gray;
 }
 
+.mainTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: gray;
+}
+
 .title {
   font-size: 1.8rem;
   padding-bottom: 20px;
 }
 
-.galleryContainer {
-}
-
 .text {
   font-size: 1.2rem;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .gallery {
@@ -47,4 +50,8 @@
   color: white;
   font-weight: 600;
   font-size: 1.8rem;
+}
+
+.galleryItem:hover .imgText {
+  color: rgb(145, 212, 212);
 }

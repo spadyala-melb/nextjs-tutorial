@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navbar = () => {
   const links = [
@@ -40,6 +41,9 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.logo}>
         <Link href="/">Padyala&apos;s</Link>
+      </div>
+      <div>
+        <ThemeToggle />
       </div>
       <div className={styles.navLinks}>
         {links.map((link) => (

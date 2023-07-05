@@ -10,9 +10,21 @@ a {
 }
 
 html {
-  max-width: 1366px;
   margin: 0 auto;
-  /* background-color: #111; */
+}
+
+.theme {
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: white;
+  color: gray;
+}
+
+.dark {
+  background-color: #111;
+  color: gray;
 }
 
 .container {

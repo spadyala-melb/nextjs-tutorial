@@ -1,0 +1,32 @@
+.container {
+  height: 20px;
+  width: 40px;
+  border: 1.5px solid teal;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+.moon {
+  color: white;
+  width: 13px;
+  height: 13px;
+}
+
+.sun {
+  color: goldenrod;
+  width: 15px;
+  height: 15px;
+}
+
+.ball {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: teal;
+  position: absolute;
+}

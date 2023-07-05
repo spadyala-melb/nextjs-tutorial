@@ -6,9 +6,6 @@ import Link from "next/link";
 const Portfolio = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
-        <h1>Our Works</h1>
-      </div>
       <div className={styles.galleryContainer}>
         <div className={styles.text}>Choose Gallery</div>
         <div className={styles.gallery}>
